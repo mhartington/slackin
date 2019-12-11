@@ -20,7 +20,6 @@ var flags = args.parse(process.argv, {
   value: '<team-id> <api-token> <google-captcha-secret> <google-captcha-sitekey>',
   help: false
 })
-
 var org = args.sub[0] || process.env.SLACK_SUBDOMAIN
 var token = args.sub[1] || process.env.SLACK_API_TOKEN
 var emails = process.env.EMAIL_SLACK_LIST || ''
